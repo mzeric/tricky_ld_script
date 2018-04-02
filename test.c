@@ -3,8 +3,8 @@
 #define HELLO 1+3
 #define SRAM __attribute__((section(".sram")))
 
-extern const uint32_t _load_sram_funcs;
-extern const uint32_t _start_sram_funcs;
+extern uint32_t _load_sram_funcs;
+extern uint32_t _start_sram_funcs;
 extern const uint32_t _end_sram_funcs;
 
 SRAM int sram_func(int t){
